@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="850" viewBox="0 0 1400 850" role="img" aria-labelledby="title description">
+  <title id="title">Programming Lab Auto Evaluation System Architecture</title>
+  <desc id="description">React frontend connects to FastAPI, which coordinates evaluation runtime and isolated Docker sandboxes, with SQLite, agents, skills, memory, and MCP metadata.</desc>
+  <rect width="1400" height="850" fill="#f3f6f4"/>
+  <text x="70" y="73" fill="#1f2926" font-family="Segoe UI, sans-serif" font-size="30" font-weight="700">Programming Lab Auto Evaluation</text>
+  <text x="73" y="106" fill="#5b6c63" font-family="Segoe UI, sans-serif" font-size="13" letter-spacing="2">SYSTEM ARCHITECTURE</text>
+  <g font-family="Segoe UI, sans-serif">
+    <g transform="translate(70 190)"><rect width="270" height="145" fill="#fff" stroke="#d2ded7" stroke-width="2"/><rect width="7" height="145" fill="#167153"/><text x="23" y="54" fill="#1f2926" font-size="19" font-weight="700">React frontend</text><text x="23" y="84" fill="#5b6c63" font-size="14">Student and faculty views</text><text x="23" y="107" fill="#5b6c63" font-size="14">Code editor</text></g>
+    <g transform="translate(405 190)"><rect width="270" height="145" fill="#fff" stroke="#d2ded7" stroke-width="2"/><rect width="7" height="145" fill="#30758f"/><text x="23" y="54" fill="#1f2926" font-size="19" font-weight="700">FastAPI API</text><text x="23" y="84" fill="#5b6c63" font-size="14">Exam and question routes</text><text x="23" y="107" fill="#5b6c63" font-size="14">Submissions and results</text></g>
+    <g transform="translate(740 190)"><rect width="270" height="145" fill="#fff" stroke="#d2ded7" stroke-width="2"/><rect width="7" height="145" fill="#167153"/><text x="23" y="54" fill="#1f2926" font-size="19" font-weight="700">Evaluation runtime</text><text x="23" y="84" fill="#5b6c63" font-size="14">Workflow and scoring</text><text x="23" y="107" fill="#5b6c63" font-size="14">Audit events</text></g>
+    <g transform="translate(1075 190)"><rect width="255" height="145" fill="#fff" stroke="#d2ded7" stroke-width="2"/><rect width="7" height="145" fill="#bf7737"/><text x="23" y="54" fill="#1f2926" font-size="19" font-weight="700">Docker sandbox</text><text x="23" y="84" fill="#5b6c63" font-size="14">Python, C++, Java</text><text x="23" y="107" fill="#5b6c63" font-size="14">Resource-constrained runs</text></g>
+    <g transform="translate(405 485)"><rect width="270" height="145" fill="#fff" stroke="#d2ded7" stroke-width="2"/><rect width="7" height="145" fill="#30758f"/><text x="23" y="54" fill="#1f2926" font-size="19" font-weight="700">SQLite database</text><text x="23" y="84" fill="#5b6c63" font-size="14">Submissions</text><text x="23" y="107" fill="#5b6c63" font-size="14">Evaluation records</text></g>
+    <g transform="translate(740 485)"><rect width="270" height="145" fill="#fff" stroke="#d2ded7" stroke-width="2"/><rect width="7" height="145" fill="#167153"/><text x="23" y="54" fill="#1f2926" font-size="19" font-weight="700">Agents and skills</text><text x="23" y="84" fill="#5b6c63" font-size="14">Validation and test cases</text><text x="23" y="107" fill="#5b6c63" font-size="14">Similarity and feedback</text></g>
+    <g transform="translate(1075 485)"><rect width="255" height="145" fill="#fff" stroke="#d2ded7" stroke-width="2"/><rect width="7" height="145" fill="#bf7737"/><text x="23" y="54" fill="#1f2926" font-size="19" font-weight="700">Memory and MCP</text><text x="23" y="84" fill="#5b6c63" font-size="14">Retrieval helpers</text><text x="23" y="107" fill="#5b6c63" font-size="14">Tool/resource metadata</text></g>
+  </g>
+  <g fill="none" stroke="#6f8f7f" stroke-width="3" marker-end="url(#arrow)">
+    <path d="M340 262H405"/><path d="M675 262H740"/><path d="M1010 262H1075"/><path d="M540 335V485"/><path d="M875 335V485"/><path d="M1010 557H1075"/>
+  </g>
+  <g fill="#5b6c63" font-family="Segoe UI, sans-serif" font-size="12"><text x="344" y="237">HTTP / JSON</text><text x="680" y="237">evaluate</text><text x="1014" y="237">isolated execution</text></g>
+  <defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0 0L9 4.5L0 9Z" fill="#6f8f7f"/></marker></defs>
+</svg>

@@ -1,0 +1,40 @@
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      DATABASE_PATH: /app/database/evaluations.db
+    volumes:
+      - evaluation-data:/app/database
+
+  frontend:
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile
+    ports:
+      - "5173:5173"
+    environment:
+      VITE_API_URL: http://localhost:8000/api
+    depends_on:
+      - backend
+
+  sandbox-python:
+    image: programming-lab-python
+    build: ./sandbox/docker/python
+    profiles: [sandbox]
+
+  sandbox-cpp:
+    image: programming-lab-cpp
+    build: ./sandbox/docker/cpp
+    profiles: [sandbox]
+
+  sandbox-java:
+    image: programming-lab-java
+    build: ./sandbox/docker/java
+    profiles: [sandbox]
+
+volumes:
+  evaluation-data:
